@@ -57,12 +57,17 @@ yarn add multer
 yarn sequelize migration:create --name=create-files
 yarn sequelize db:migrate
 
-yarn sequelize migration:create --name=avatar-field-to-users
-yarn sequelize db:migrate
+yarn add date-fns
 
 Modulo 03: Migration e model de agendamento
-yarn sequelize migration:create --name=create-appointments
+yarn sequelize migration:create --name=create-meetups
+
+Depois que os campos foram definidos no create-meetups.js:
 yarn sequelize db:migrate
+
+yarn sequelize migration:create --name=create-subscriptions
+
+Depois que os campos foram definidos no create-subscriptions.js:
 
 Modulo 03: Valida��es de agendamento
 yarn add date-fns@next

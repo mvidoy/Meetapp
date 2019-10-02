@@ -14,7 +14,7 @@ class SubscriptionController {
           model: Meetup,
           where: {
             date: {
-              [Op.gt]: new Date(),
+              [Op.gt]: new Date(), //* Data > data atual (http://docs.sequelizejs.com/manual/querying.html)  */
             },
           },
           required: true,
